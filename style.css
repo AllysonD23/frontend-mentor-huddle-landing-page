@@ -22,6 +22,38 @@ button {
 
 /* CSS Grid layout */
 
+.container {
+    display: grid;
+    grid-template-areas: 
+    "logo-banner logo-banner"
+    "mockups texts"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo-banner {
+    grid-area: logo-banner;
+}
+
+.mockups {
+    grid-area: mockups;
+}
+
+.texts {
+    grid-area: texts;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Images */
+
+.logo {
+    height: 40px;
+    width: 200px;
+}
+
 /* Default CSS Styles that were provided */
 
 .attribution { 
