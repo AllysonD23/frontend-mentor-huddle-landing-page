@@ -17,7 +17,12 @@ h1 {
 button {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: hsl(228, 45%, 44%);
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    font-size: 15px;
+    padding: 12px 60px;
+    border-radius: 30px;
+    border: none;
 }
 
 /* CSS Grid layout */
@@ -33,14 +38,17 @@ button {
 
 .logo-banner {
     grid-area: logo-banner;
+    padding: 40px 0px 70px 40px;
 }
 
 .mockups {
     grid-area: mockups;
+    padding: 0px 50px 0px 40px;
 }
 
 .texts {
     grid-area: texts;
+    padding: 30px 90px 0px 0px;
 }
 
 footer {
@@ -50,8 +58,13 @@ footer {
 /* Images */
 
 .logo {
-    height: 40px;
-    width: 200px;
+    height: 50px;
+    width: 210px;
+}
+
+.mockups-image {
+    height: 500px;
+    width: 700px;
 }
 
 /* Default CSS Styles that were provided */
