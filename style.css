@@ -93,11 +93,13 @@ a:hover {
 .texts {
     grid-area: texts;
     padding: 30px 90px 0px 0px;
+
 }
 
 .social-bar {
     grid-area: social-bar;
     padding: 0px 90px 0px 0px;
+
 }
 
 footer {
