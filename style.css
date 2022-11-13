@@ -1,8 +1,10 @@
+/* Small devices (phones, 375px and down) */
+
 /* text and color styling */
 
 body {
     background-image: url("images/bg-desktop.svg");
-    background-color: hsl(257, 40%, 49%);
+    background-color: green;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: white;
@@ -14,7 +16,7 @@ h1 {
     color: white;
 }
 
-button {
+.button-register {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: hsl(257, 40%, 49%);
@@ -23,6 +25,46 @@ button {
     padding: 12px 60px;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.fa-brands {
+    --fa-border-color: white; 
+    --fa-border-radius: 80%; 
+    --fa-border-style: solid; 
+    --fa-pull-margin: 15px;
+}
+
+.fa-brands:hover {
+    --fa-border-color: hsl(300, 69%, 71%); 
+}
+
+.fa-instagram {
+    --fa-border-width: 0.09em; 
+    --fa-border-padding: 16px 7px 16px 8px;
+}
+
+.fa-twitter {
+    --fa-border-width: 0.1em;
+    --fa-border-padding: 8px 8px 8px 8px;
+}
+
+.fa-facebook-f {
+    --fa-border-width: 0.1em;
+    --fa-border-padding: 8px 10px 8px 10px;
 }
 
 /* CSS Grid layout */
@@ -30,10 +72,12 @@ button {
 .container {
     display: grid;
     grid-template-areas: 
-    "logo-banner logo-banner"
-    "mockups texts"
-    "footer footer";
-    grid-template-columns: 1fr 1fr;
+    "logo-banner"
+    "mockups" 
+    "texts"
+    "social-bar"
+    "footer";
+    grid-template-columns: 1fr;
 }
 
 .logo-banner {
@@ -49,6 +93,13 @@ button {
 .texts {
     grid-area: texts;
     padding: 30px 90px 0px 0px;
+
+}
+
+.social-bar {
+    grid-area: social-bar;
+    padding: 0px 90px 0px 0px;
+
 }
 
 footer {
@@ -77,3 +128,23 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+/* Large devices (desktops/laptops, 375px and up, 1440px designed in default syling) */
+@media only screen and (min-width: 376px) {
+    body {
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    /* CSS Grid layout */
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "logo-banner logo-banner"
+        "mockups texts"
+        "social-bar social-bar"
+        "footer footer";
+        grid-template-columns: 1fr 1fr;
+}
+  }
